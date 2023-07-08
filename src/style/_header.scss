@@ -1,0 +1,196 @@
+.header {
+  // .header__contact
+  &__contact {
+    background: $main_gradient;
+    color: #FFFFFF;
+  }
+
+  // .header__contact-wrapper
+
+  &__contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, auto);
+    grid-template-rows: 40px;
+    align-items: center;
+  }
+
+  // .header__contact-delivery
+  &__contact-delivery {
+    font-family: Roboto, serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  // .header__contact-email
+  &__contact-email {
+    color: #FFFFFF;
+    font-family: Ubuntu-300, serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 60px;
+    margin: 0 45px;
+    position: relative;
+
+    &::before {
+      content: url("../img/header/envelope.png");
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      transform: translateY(25%);
+      margin-right: 6px;
+    }
+  }
+
+  // .header__contact-phone
+  &__contact-phone {
+    color: #FFFFFF;
+    font-family: Ubuntu-300, serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 60px;
+
+    &::before {
+      content: url("../img/header/phone-call.png");
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      transform: translateY(25%);
+      margin-right: 6px;
+    }
+  }
+
+  // .header__menu
+  &__menu {
+    font-family: Roboto, serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  &__menu-wrapper {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+
+  // .header__logo
+  &__logo {
+    width: 216px;
+    height: 44px;
+    margin-right: 148px;
+  }
+
+  // .header__menu-body
+  &__menu-body {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  // .header__menu-list
+  &__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: center;
+  }
+
+  // .header__menu-item
+  &__menu-item {
+    margin-right: 65px;
+  }
+
+  // .header__menu-link
+  &__menu-link {
+    color: $brown;
+  }
+
+  // .header__menu-pictogram-list
+  &__menu-pictogram-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-left: 1px solid $violet;
+    padding: 0 0 0 16px;
+  }
+
+  // .header__menu-pictogram-item
+  &__menu-pictogram-item {
+  }
+
+  // .header__menu-pictogram-link
+  &__menu-pictogram-link {
+    color: $violet;
+  }
+
+  // .header__menu-pictogram-img
+  &__menu-pictogram-img {
+  }
+
+  // .header__menu-burger
+  &__menu-burger {
+    display: inline-block;
+    height: 1px;
+    width: 24px;
+    background-color: $violet;
+    position: relative;
+    margin-left: 16px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      right: 0;
+      display: inline-block;
+      height: 1px;
+      width: 24px;
+      background-color: $violet;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      right: 0;
+      display: inline-block;
+      height: 1px;
+      width: 24px;
+      background-color: $violet;
+    }
+  }
+}
+
+#search {
+  padding-right: 80px;
+}
+
+#like {
+  padding-right: 29px;
+}
+
+#cart {
+  padding-right: 65px;
+  position: relative;
+
+  &::after {
+    content: '1';
+    display: inline-block;
+    text-align: center;
+    font-family: Ubuntu-400, serif;
+    font-size: 9px;
+    line-height: 15px;
+    color: #FFFFFF;
+    border-radius: 100%;
+    background-color: $violet;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    left: 15px;
+  }
+}
+
+
+
