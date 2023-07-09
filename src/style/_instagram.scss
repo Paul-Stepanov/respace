@@ -1,0 +1,39 @@
+.instagram {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 230px 1fr 457px;
+    justify-items: start;
+  }
+
+  &__logo {
+    width: 183px;
+    height: 183px;
+  }
+
+  &__description {
+  }
+
+  &__title {
+    margin-bottom: 36px;
+  }
+
+  &__text {
+    margin-right: 133px;
+  }
+
+  &__button {
+    justify-self: end;
+    align-self: end;
+    width: 457px;
+    height: 80px;
+    border-radius: 10px;
+    background: $button-gradient;
+    backdrop-filter: blur(7.5px);
+    color: $white;
+    font-family: Ubuntu-400, serif;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
