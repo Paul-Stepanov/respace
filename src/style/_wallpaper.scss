@@ -1,5 +1,6 @@
 .wallpaper {
   margin-bottom: 135px;
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -19,14 +20,11 @@
   }
 
   &__gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 339px);
-    column-gap: 15px;
+
   }
 
   &__gallery-column {
-    display: grid;
-    row-gap: 15px;
+
   }
 
   &__gallery-card {

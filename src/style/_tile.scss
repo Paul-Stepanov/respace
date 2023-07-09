@@ -1,0 +1,40 @@
+.tile {
+  margin-bottom: 137px;
+  &__presentation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 73px;
+  }
+
+  &__presentation-description {
+    margin-right: 70px;
+    display: grid;
+  }
+
+  &__presentation-title {
+    margin-bottom: 32px;
+  }
+
+  &__presentation-text {
+    margin-bottom: 15px;
+  }
+
+  &__presentation-detail {
+    align-self: end;
+  }
+
+  &__presentation-img {
+    align-self: center;
+  }
+
+  &__gallery {
+  }
+
+  &__gallery-column {
+  }
+
+  &__gallery-card {
+  }
+}
+
+
