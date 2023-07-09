@@ -1,0 +1,38 @@
+.new-wallpaper {
+  margin-bottom: 160px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 339px);
+    column-gap: 15px;
+    position: relative;
+    &::before{
+      content: url("../img/new_wallpaper/left_next.png");
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: -59px;
+      transform: translateY(-50%);
+    }
+    &::after{
+      content: url("../img/new_wallpaper/right_next.png");
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: -59px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__gallery-card {
+  }
+}
+
