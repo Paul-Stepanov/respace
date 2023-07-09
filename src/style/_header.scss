@@ -1,11 +1,8 @@
 .header {
-  // .header__contact
   &__contact {
     background: $main_gradient;
     color: #FFFFFF;
   }
-
-  // .header__contact-wrapper
 
   &__contact-wrapper {
     display: grid;
@@ -14,7 +11,6 @@
     align-items: center;
   }
 
-  // .header__contact-delivery
   &__contact-delivery {
     font-family: Roboto, serif;
     font-size: 13px;
@@ -22,7 +18,6 @@
     line-height: 15px;
   }
 
-  // .header__contact-email
   &__contact-email {
     color: #FFFFFF;
     font-family: Ubuntu-300, serif;
@@ -42,7 +37,6 @@
     }
   }
 
-  // .header__contact-phone
   &__contact-phone {
     color: #FFFFFF;
     font-family: Ubuntu-300, serif;
@@ -60,7 +54,6 @@
     }
   }
 
-  // .header__menu
   &__menu {
     font-family: Roboto, serif;
     font-size: 16px;
@@ -69,27 +62,25 @@
   }
 
   &__menu-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(min-content, 364px) 1fr;
+    grid-template-rows: 80px;
     align-items: center;
-    height: 80px;
   }
 
-  // .header__logo
   &__logo {
     width: 216px;
     height: 44px;
-    margin-right: 148px;
   }
 
-  // .header__menu-body
   &__menu-body {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-grow: 1;
     flex-shrink: 1;
   }
 
-  // .header__menu-list
   &__menu-list {
     display: flex;
     flex-wrap: wrap;
@@ -97,39 +88,35 @@
     align-items: center;
   }
 
-  // .header__menu-item
   &__menu-item {
     margin-right: 65px;
   }
 
-  // .header__menu-link
   &__menu-link {
     color: $brown;
   }
 
-  // .header__menu-pictogram-list
   &__menu-pictogram-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     border-left: 1px solid $violet;
     padding: 0 0 0 16px;
+    display: grid;
+    grid-template-columns: 100px 50px 86px 1fr;
+    grid-template-rows: 36px;
+    align-items: center;
   }
 
-  // .header__menu-pictogram-item
   &__menu-pictogram-item {
+    display: flex;
+    align-items: center;
   }
 
-  // .header__menu-pictogram-link
   &__menu-pictogram-link {
     color: $violet;
   }
 
-  // .header__menu-pictogram-img
   &__menu-pictogram-img {
   }
 
-  // .header__menu-burger
   &__menu-burger {
     display: inline-block;
     height: 1px;
@@ -162,16 +149,7 @@
   }
 }
 
-#search {
-  padding-right: 80px;
-}
-
-#like {
-  padding-right: 29px;
-}
-
 #cart {
-  padding-right: 65px;
   position: relative;
 
   &::after {
