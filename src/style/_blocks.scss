@@ -1,5 +1,4 @@
 // --- title ↓ ---
-
 .title {
   color: $dark_violet;
   font-family: Ubuntu-500, serif;
@@ -178,6 +177,7 @@
   }
 }
 
+// --- slider ↓ ---
 .slider{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
