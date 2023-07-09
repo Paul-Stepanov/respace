@@ -1,0 +1,37 @@
+.designer-wallpaper {
+  background: #F6F6F6;
+
+  &__wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 658px;
+    align-items: center;
+  }
+
+  &__description {
+    margin-right: 135px;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+  }
+
+  &__text {
+  }
+
+  &__video-box {
+    position: relative;
+  }
+
+  &__video {
+  }
+
+  &__img {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
