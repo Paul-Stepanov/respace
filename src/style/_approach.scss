@@ -1,0 +1,23 @@
+.approach {
+  margin-bottom: 118px;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  &__description {
+    margin-right: 60px;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    margin-bottom: 18px;
+  }
+
+  &__img {
+  }
+}

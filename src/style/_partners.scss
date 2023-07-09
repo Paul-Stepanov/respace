@@ -19,6 +19,25 @@
     grid-template-columns: repeat(6, minmax(220px, 1fr));
     column-gap: 15px;
     margin-bottom: 165px;
+    position: relative;
+    &:before{
+      content: url("../img/partners/prsn1.png");
+      position: absolute;
+      top: 50%;
+      left: -49px;
+      transform: translateY(-50%);
+      z-index: 5;
+      cursor: pointer;
+    }
+    &:after{
+      content: url("../img/partners/prsn2.png");
+      position: absolute;
+      top: 50%;
+      right: -49px;
+      transform: translateY(-50%);
+      z-index: 5;
+      cursor: pointer;
+    }
   }
 
   &__big-img-wrapper {
