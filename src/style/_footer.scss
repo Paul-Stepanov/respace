@@ -1,0 +1,135 @@
+.footer {
+  &__top {
+    margin-bottom: 80px;
+  }
+
+  &__top-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    align-items: baseline;
+  }
+
+  &__products-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__products-body {
+    margin-bottom: 26px;
+  }
+
+  &__title {
+    color: $violet;
+    font-family: Ubuntu-500, serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__products-title {
+    margin-bottom: 16px;
+  }
+
+  &__products-item {
+    color: $brown;
+    font-family: Ubuntu-400, serif;
+    font-size: 14px;
+    line-height: 34px;
+  }
+
+  &__contacts-body {
+    display: grid;
+    grid-template-columns: 220px;
+    justify-content: start;
+  }
+
+  &__contacts-title {
+    margin-bottom: 22px;
+  }
+
+  &__contacts-phone {
+    color: $violet;
+    font-family: Ubuntu-400, serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+
+    &:before {
+      content: url("../img/footer/fo7.png");
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      transform: translateY(25%);
+      margin-right: 16px;
+    }
+  }
+
+  &__contacts-email {
+    color: $violet;
+    font-family: Ubuntu-400, serif;
+    font-size: 16px;
+    padding-bottom: 28px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid $violet;
+
+    &::before {
+      content: url("../img/footer/fo8.png");
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      transform: translateY(25%);
+      margin-right: 16px;
+    }
+  }
+
+  &__contacts-social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35px);
+    column-gap: 10px;
+    margin-bottom: 35px;
+  }
+
+  &__social-link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: $soft_pink_gradient;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  &__social-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+
+  &__agreement {
+    color: $brown;
+    font-family: Ubuntu-400, serif;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 13px;
+  }
+
+  &__copyright {
+    color: #4E3535;
+    font-family: Ubuntu-400, serif;
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  &__bottom {
+    background: $button-gradient;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__arrow {
+    cursor: pointer;
+  }
+}

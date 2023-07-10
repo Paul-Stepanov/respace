@@ -228,8 +228,7 @@
 
   &__description {
     height: 100%;
-    padding-right: calc(50vw - 700px);
-    padding-left: 60px;
+    padding: 66px calc(50vw - 700px) 66px 60px;
     display: grid;
     align-content: center;
     row-gap: 18px;
@@ -275,8 +274,7 @@
 
   &__description {
     height: 100%;
-    padding-right: 60px;
-    padding-left: calc(50vw - 700px);
+    padding: 66px 60px 66px calc(50vw - 700px);
     display: grid;
     align-content: center;
     row-gap: 18px;
