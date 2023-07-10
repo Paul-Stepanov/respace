@@ -1,0 +1,22 @@
+.why {
+  margin-bottom: 162px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 71px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3,416px);
+    column-gap: 56px;
+    row-gap: 45px;
+  }
+
+  &__card-body {
+  }
+}
+
