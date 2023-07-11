@@ -58,6 +58,8 @@
     @media screen and (max-width: 1050px) {
       justify-self: start;
       padding: 20px 0 0;
+      color: #4E3535;
+      font-size: 16px;
     }
   }
 
@@ -96,6 +98,10 @@
   backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 1050px) {
+    width: 270px;
+    height: 497px;
+  }
 
   &__body {
     flex-shrink: 0;
@@ -131,6 +137,9 @@
     font-family: Ubuntu-400, serif;
     font-size: 18px;
     line-height: 24px;
+    @media screen and (max-width: 1050px){
+      font-size: 16px;
+    }
   }
 
   &__delivery {
@@ -159,6 +168,10 @@
     justify-content: center;
     align-items: center;
     padding: 20px 50px 19px 27px;
+    @media screen and (max-width: 1050px){
+    padding: 0 20px;
+      justify-content: space-between;
+    }
   }
 
   &__price-title {
@@ -168,6 +181,9 @@
     line-height: 24px;
     align-self: flex-start;
     margin-right: 5px;
+    @media screen and (max-width: 1050px){
+    align-self: center;
+    }
   }
 
   &__price-cost {
@@ -175,6 +191,9 @@
     font-family: Ubuntu-300, serif;
     font-size: 42px;
     line-height: 24px;
+    @media screen and (max-width: 1050px){
+      font-size: 32px;
+    }
 
     & span {
       font-family: Ubuntu-400, serif;
@@ -386,7 +405,7 @@
 }
 
 // --- button ↓ ---
-.button{
+.button {
   width: 270px;
   height: 62px;
   border-radius: 10px;
