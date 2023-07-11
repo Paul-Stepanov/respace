@@ -34,12 +34,31 @@
   height: auto;
   position: relative;
 
+  @media screen and (max-width: 1050px) {
+    & > img {
+      width: 270px;
+      height: 255px;
+      object-fit: cover;
+      border-radius: 20px 0 20px 0;
+
+    }
+    display: grid;
+    grid-template-columns: 275px;
+    justify-items: center;
+    justify-self: center;
+    padding: 0 25px;
+  }
+
   &__img {
     margin-bottom: 10px;
   }
 
   &__detail {
     color: $brown;
+    @media screen and (max-width: 1050px) {
+      justify-self: start;
+      padding: 20px 0 0;
+    }
   }
 
   &__description {
@@ -326,6 +345,7 @@
     @media screen and (max-width: 1520px) {
       text-align: center;
     }
+
     &:last-child {
       margin-top: 18px;
     }
@@ -365,3 +385,21 @@
   }
 }
 
+// --- button ↓ ---
+.button{
+  width: 270px;
+  height: 62px;
+  border-radius: 10px;
+  border: 1px solid $btn-border;
+  backdrop-filter: blur(7.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $violet;
+  text-align: right;
+  font-family: Ubuntu-400, serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  margin: 30px;
+}
