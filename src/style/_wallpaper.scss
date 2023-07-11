@@ -4,6 +4,10 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 1520px){
+      justify-content: center;
+      align-items: stretch;
+    }
   }
 
   &__headline {
@@ -20,16 +24,28 @@
   }
 
   &__gallery {
-
+    @media screen and (max-width: 1520px) {
+      grid-template-columns: repeat(3, 339px);
+      justify-content: center;
+    }
   }
 
   &__gallery-column {
-
+    @media screen and (max-width: 1520px) {
+      &:last-child {
+        display: grid;
+        grid-template-columns: repeat(3, 339px);
+        column-gap: 15px;
+        margin-top: 15px;
+      }
+    }
   }
 
   &__gallery-card {
+
   }
 }
+
 
 
 

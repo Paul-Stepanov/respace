@@ -11,7 +11,13 @@
   }
 
   &__gallery {
-
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 1520px) {
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
   }
 
   &__gallery-card {

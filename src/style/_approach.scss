@@ -4,10 +4,19 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    @media screen and (max-width: 1520px){
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+    }
   }
 
   &__description {
     margin-right: 60px;
+    @media screen and (max-width: 1520px){
+      margin: 0;
+    }
   }
 
   &__title {

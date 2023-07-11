@@ -1,16 +1,29 @@
 .designer-wallpaper {
   background: $bg-gray;
   margin-bottom: 167px;
+
   &__wrapper {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 658px;
     align-items: center;
+    @media screen and (max-width: 1520px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    text-align: center;
   }
 
   &__description {
     margin-right: 135px;
+    @media screen and (max-width: 1520px) {
+      justify-items:  center;
+      margin: 0;
+ }
   }
 
   &__title {

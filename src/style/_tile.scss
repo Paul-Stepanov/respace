@@ -4,12 +4,23 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 73px;
+    @media screen and (max-width: 1520px){
+      display: grid;
+      grid-template-columns: 1fr  ;
+      justify-items: center;
+      align-items: center;
+
+    }
   }
 
   &__presentation-description {
     margin-right: 70px;
     display: grid;
-  }
+    @media screen and (max-width: 1520px) {
+      justify-items: center;
+      margin: 0;
+    }
+    }
 
   &__presentation-title {
     margin-bottom: 32px;
@@ -28,9 +39,21 @@
   }
 
   &__gallery {
+    @media screen and (max-width: 1520px) {
+      grid-template-columns: repeat(3, 339px);
+      justify-content: center;
+    }
   }
 
   &__gallery-column {
+    @media screen and (max-width: 1520px) {
+      &:last-child {
+        display: grid;
+        grid-template-columns: repeat(3, 339px);
+        column-gap: 15px;
+        margin-top: 15px;
+      }
+    }
   }
 
   &__gallery-card {
