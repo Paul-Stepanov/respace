@@ -1,6 +1,9 @@
 .designer-wallpaper {
   background: $bg-gray;
   margin-bottom: 167px;
+  @media screen and (max-width: 1050px){
+    margin-bottom: 80px;
+  }
 
   &__wrapper {
     height: 100%;
