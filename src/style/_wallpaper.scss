@@ -4,7 +4,7 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    @media screen and (max-width: 1520px){
+    @media screen and (max-width: 1520px) {
       justify-content: center;
       align-items: stretch;
     }
@@ -28,6 +28,10 @@
       grid-template-columns: repeat(3, 339px);
       justify-content: center;
     }
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(2, 339px);
+      justify-content: center;
+    }
   }
 
   &__gallery-column {
@@ -39,10 +43,24 @@
         margin-top: 15px;
       }
     }
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      &:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 
   &__gallery-card {
-
+    @media screen and (max-width: 1200px) {
+margin: 10px;
+    }
   }
 }
 

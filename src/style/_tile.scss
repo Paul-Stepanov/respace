@@ -43,6 +43,10 @@
       grid-template-columns: repeat(3, 339px);
       justify-content: center;
     }
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(2, 339px);
+      justify-content: center;
+    }
   }
 
   &__gallery-column {
@@ -52,6 +56,18 @@
         grid-template-columns: repeat(3, 339px);
         column-gap: 15px;
         margin-top: 15px;
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      &:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
