@@ -1,0 +1,97 @@
+.designer-wallpaper {
+  background: $bg-gray;
+  margin-bottom: 167px;
+  @media screen and (max-width: 1050px){
+    margin-bottom: 80px;
+  }
+
+  &__wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 658px;
+    align-items: center;
+    @media screen and (max-width: 1520px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    text-align: center;
+    @media screen and (min-width: 270px) and (max-width: 1049px) {
+      flex-wrap: nowrap;
+      flex-direction: column-reverse;
+      padding: 0;
+    }
+  }
+
+  &__description {
+    margin-right: 135px;
+    @media screen and (max-width: 1520px) {
+      justify-items: center;
+      margin: 0;
+    }
+    @media screen and (max-width: 1050px) {
+      text-align: left;
+    }
+  }
+
+  &__title {
+    margin-bottom: 34px;
+    @media screen and (max-width: 1050px) {
+      color: $dark_violet;
+      font-size: 26px;
+      line-height: 38px;
+    }
+  }
+
+  &__text {
+    @media screen and (max-width: 1050px){
+      margin-bottom: 50px;
+      font-size: 16px;
+      font-style: normal;
+      line-height: 27px;
+    }
+  }
+
+  &__video-box {
+    position: relative;
+    @media screen and (max-width: 1050px) {
+      margin: 34px 0;
+      &:after {
+        content: "Инструкция по наклейке обоев Респейс";
+        position: absolute;
+        bottom: 7px;
+        left: 0;
+        color: $white;
+        text-align: center;
+        font-family: Ubuntu-500, serif;
+        font-size: 14px;
+        font-style: normal;
+        line-height: normal;
+        z-index: 200;
+      }
+    }
+  }
+
+  &__video {
+    @media screen and (max-width: 1050px) {
+      width: 270px;
+      height: 152px;
+
+    }
+  }
+
+  &__img {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 1050px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

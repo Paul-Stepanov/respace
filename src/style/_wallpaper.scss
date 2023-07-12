@@ -1,0 +1,111 @@
+.wallpaper {
+  margin-bottom: 135px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 1520px) {
+      justify-content: center;
+      align-items: stretch;
+    }
+  }
+
+  &__headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 45px;
+    @media screen and (max-width: 1050px) {
+      margin-bottom: 17px;
+    }
+  }
+
+  &__title {
+    @media screen and (max-width: 1050px) {
+      color: $dark_violet;
+      font-family: Ubuntu-500, serif;
+      font-size: 22px;
+      font-style: normal;
+      line-height: normal;
+    }
+  }
+
+  &__detail {
+    @media screen and (max-width: 1050px) {
+      display: none;
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__gallery {
+    @media screen and (max-width: 1520px) {
+      grid-template-columns: repeat(3, 339px);
+      justify-content: center;
+    }
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(2, 339px);
+    }
+    @media screen and (min-width: 270px) and (max-width: 1199px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+
+  &__gallery-column {
+
+    @media screen and (max-width: 1520px) {
+      &:last-child {
+        display: grid;
+        grid-template-columns: repeat(3, 339px);
+        column-gap: 15px;
+        margin-top: 15px;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      &:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      @media screen and (max-width: 1050px) {
+        display: none;
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+
+    &--mobile {
+      display: none;
+      @media screen and (min-width: 270px) and (max-width: 1199px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 0;
+      }
+    }
+  }
+
+  &__gallery-card {
+    @media screen and (max-width: 1200px) {
+      margin: 10px;
+    }
+  }
+
+  &__gallery-button {
+    margin-top: 30px;
+  }
+}
+
+
+
+

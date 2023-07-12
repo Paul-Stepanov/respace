@@ -1,0 +1,121 @@
+.about {
+  width: 100%;
+  height: 760px;
+  background: url("../img/about/bg.png"), lightgray 0px -388.94px / 100% 168.442% no-repeat;
+  margin-bottom: 87px;
+  @media screen and (max-width: 1050px) {
+    flex-direction: column;
+    background: none;
+    background: $main_gradient;
+    height: auto;
+    margin-bottom: 79px;
+  }
+
+  &__wrapper {
+    height: 760px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &::before {
+      content: url("../img/about/next.png");
+      cursor: pointer;
+      margin-right: 19px;
+      margin-left: -59px;
+      @media screen and (max-width: 1050px) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 1050px) {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+
+  &__bg {
+    display: none;
+
+    &--mobile {
+      @media screen and (max-width: 1050px) {
+        display: block;
+        object-fit: cover;
+      }
+      @media screen and (max-width: 1050px) {
+        height: 295px;
+      }
+    }
+  }
+
+  &__card-body {
+    display: flex;
+    flex-direction: column;
+    width: 575px;
+    height: 562px;
+    border-radius: 40px 0;
+    background: rgba(255, 255, 255, 0.60);
+    backdrop-filter: blur(7.5px);
+    padding: 53px 48px 55px 49px;
+    @media screen and (max-width: 1050px) {
+      border-radius: 0;
+      width: 100%;
+      height: auto;
+      background: transparent;
+      align-items: flex-start;
+      padding: 19px 10px 23px 10px;
+      backdrop-filter: none;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 54px;
+    @media screen and (max-width: 1050px) {
+      color: $white;
+      font-family: Ubuntu-500, serif;
+      font-size: 28px;
+      line-height: 36px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__card-text {
+    margin-bottom: 157px;
+    @media screen and (max-width: 1050px) {
+      display: none;
+    }
+  }
+
+  &__card-circles-list {
+    display: flex;
+    @media screen and (max-width: 1050px) {
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+    }
+  }
+
+  &__card-circle {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background-color: $gray;
+    border-radius: 100%;
+    margin-right: 8px;
+    @media screen and (max-width: 1050px) {
+      background-color: $white;
+      width: 6px;
+      height: 6px;
+    }
+
+    &--active {
+      background-color: $violet;
+      @media screen and (max-width: 1050px) {
+        background-color: transparent;
+        border: 2px solid $white;
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}

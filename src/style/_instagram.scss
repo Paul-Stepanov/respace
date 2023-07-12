@@ -1,0 +1,103 @@
+.instagram {
+  margin-bottom: 144px;
+  @media screen and (max-width: 1050px) {
+    background: $bg-gray;
+    backdrop-filter: blur(4px);
+    min-height: 430px;
+    margin-bottom: 79px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 230px 1fr 457px;
+    justify-items: start;
+    @media screen and (max-width: 1050px) {
+      grid-template-areas:
+            "logo title title"
+            "text text text"
+            "btn btn btn";
+      grid-template-columns: repeat(3, minmax(90px, 1fr));
+      padding: 57px 0 54px;
+    }
+
+  }
+
+  &__logo {
+    width: 183px;
+    height: 183px;
+    @media screen and (max-width: 1050px) {
+      width: 64px;
+      height: 64px;
+      grid-area: logo;
+    }
+  }
+
+  &__description {
+    @media screen and (max-width: 1050px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 36px;
+    @media screen and (max-width: 1050px) {
+      grid-area: title;
+      margin-bottom: 28px;
+    }
+
+    &--mobile {
+      display: none;
+      @media screen and (max-width: 1050px) {
+        display: block;
+        color: $dark_violet;
+        font-family: Ubuntu-500, serif;
+        font-size: 29px;
+        font-style: normal;
+        line-height: normal;
+      }
+    }
+  }
+
+  &__text {
+    margin-right: 133px;
+    @media screen and (max-width: 1050px) {
+      grid-area: text;
+      margin-right: 0;
+      margin-bottom: 31px;
+    }
+
+    &--mobile {
+      display: none;
+      @media screen and (max-width: 1050px) {
+        display: block;
+        color: $brown;
+        font-family: Ubuntu-300, serif;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 26px;
+      }
+    }
+  }
+
+  &__button {
+    justify-self: end;
+    align-self: end;
+    width: 457px;
+    height: 80px;
+    border-radius: 10px;
+    background: $button-gradient;
+    backdrop-filter: blur(7.5px);
+    color: $white;
+    font-family: Ubuntu-400, serif;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 1050px) {
+      width: 270px;
+      height: 56px;
+      grid-area: btn;
+      justify-self: center;
+    }
+  }
+}

@@ -1,0 +1,245 @@
+.partners {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: 1520px) {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 77px;
+    @media screen and (max-width: 1050px){
+      font-size: 22px;
+      line-height: normal;
+      margin-bottom: 22px;
+align-self: flex-start;
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-areas:
+            "big big big big . ."
+            "big big big big sm sm"
+            "big big big big sm sm";
+    align-items: stretch;
+    grid-template-columns: repeat(6, minmax(220px, 1fr));
+    column-gap: 15px;
+    margin-bottom: 165px;
+    position: relative;
+
+    &:before {
+      content: url("../img/partners/prsn1.png");
+      position: absolute;
+      top: 50%;
+      left: -49px;
+      transform: translateY(-50%);
+      z-index: 5;
+      cursor: pointer;
+    }
+
+    &:after {
+      content: url("../img/partners/prsn2.png");
+      position: absolute;
+      top: 50%;
+      right: -49px;
+      transform: translateY(-50%);
+      z-index: 5;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 1520px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 270px) and (max-width: 1049px) {
+      &:before {
+        display: none;
+
+      }
+      &:after {
+        display: none;
+      }
+      max-width: 320px;
+      align-items: flex-start;
+    }
+  }
+
+  &__big-img-wrapper {
+    grid-area: big;
+    position: relative;
+    @media screen and (max-width: 1520px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 270px) and (max-width: 1049px) {
+      width: 247px;
+      height: 234px;
+      margin-bottom: -40px;
+
+    }
+  }
+
+  &__img {
+    @media screen and (max-width: 1050px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__img-icon {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    cursor: pointer;
+    @media screen and (max-width: 1050px) {
+      width: 20px;
+      height: 20px;
+      bottom: 5px;
+      right: 5px;
+      left: auto;
+    }
+  }
+
+  &__small-img-wrapper {
+    grid-area: sm;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    @media screen and (max-width: 1520px) {
+      display: none;
+    }
+  }
+
+  &__img-link-box {
+    position: relative;
+  }
+
+  &__img-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    text-align: center;
+    font-family: Roboto, serif;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration-line: underline;
+    width: 150px;
+  }
+
+
+  &__feedback {
+    grid-column: 4/7;
+    grid-row: 1/2;
+    z-index: 10;
+    display: flex;
+    width: 692px;
+    height: 235px;
+    border-radius: 0 0 0 40px;
+    background: $white;
+    @media screen and (max-width: 1050px) {
+      display: grid;
+      grid-template-columns: 225px;
+      min-height: 330px;
+      background: transparent;
+      margin-left: 25px;
+      margin-bottom: 110px;
+    }
+  }
+
+  &__feedback-logo {
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    margin: 0 68px 0 47px;
+    @media screen and (max-width: 1050px) {
+      width: 80px;
+      height: 80px;
+      margin: 0 0 12px;
+    }
+  }
+
+  &__feedback-body {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    @media screen and (max-width: 1050px) {
+      display: grid;
+      grid-template-areas: "title" "text" "insta";
+    }
+
+  }
+
+  &__feedback-body-title {
+    color: $dark_pink;
+    font-family: Roboto, serif;
+    font-size: 24px;
+    margin-bottom: 9px;
+    @media screen and (max-width: 1050px) {
+      text-align: left;
+      grid-area: title;
+      margin-bottom: 21px;
+      font-size: 20px;
+      line-height: normal;
+    }
+  }
+
+  &__feedback-body-instagram {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    @media screen and (max-width: 1050px) {
+      grid-area: insta;
+
+    }
+  }
+
+  &__instagram-logo {
+    margin-right: 15px;
+    @media screen and (max-width: 1050px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__instagram-link {
+    color: $dark_pink;
+    font-family: Roboto, serif;
+    font-size: 18px;
+    text-decoration-line: underline;
+  }
+
+  &__feedback-body-text {
+    color: $brown;
+    font-family: Ubuntu-300, serif;
+    font-size: 16px;
+    line-height: 27px;
+    @media screen and (max-width: 1050px) {
+      grid-area: text;
+      text-align: left;
+      font-size: 14px;
+      line-height: 22px;
+      &:after {
+        content: "развернуть...";
+        display: inline-block;
+        color: $violet;
+        font-family: Ubuntu-300, serif;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 27px;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}

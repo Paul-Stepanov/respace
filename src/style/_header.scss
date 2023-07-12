@@ -1,0 +1,239 @@
+.header {
+  &__contact {
+    background: $main_gradient;
+    color: $white;
+  }
+
+  &__contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, auto);
+    grid-template-rows: 40px;
+    align-items: center;
+    @media screen and (max-width: 1050px) {
+      justify-items: center;
+    }
+  }
+
+  &__contact-delivery {
+    font-family: Roboto, serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    @media screen and (max-width: 1050px) {
+      text-align: center;
+      font-size: 12px;
+      line-height: normal;
+    }
+  }
+
+  &__contact-email {
+    color: #FFFFFF;
+    font-family: Ubuntu-300, serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 60px;
+    margin: 0 45px;
+    position: relative;
+
+    &::before {
+      content: url("../img/header/envelope.png");
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      transform: translateY(25%);
+      margin-right: 6px;
+    }
+
+    @media screen and (max-width: 1050px) {
+      display: none;
+    }
+  }
+
+  &__contact-phone {
+    color: #FFFFFF;
+    font-family: Ubuntu-300, serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 60px;
+
+    &::before {
+      content: url("../img/header/phone-call.png");
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      transform: translateY(25%);
+      margin-right: 6px;
+    }
+
+    @media screen and (max-width: 1050px) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    font-family: Roboto, serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+
+  }
+
+  &__menu-wrapper {
+    display: grid;
+    grid-template-columns: minmax(min-content, 364px) 1fr;
+    grid-template-rows: 80px;
+    align-items: center;
+    @media screen and (max-width: 1400px) {
+      justify-items: end;
+    }
+  }
+
+  &__logo {
+    width: 216px;
+    height: 44px;
+    @media screen and (max-width: 1400px) {
+      justify-self: start;
+      width: auto;
+      height: 26px;
+    }
+  }
+
+  &__menu-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  &__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: center;
+    @media screen and (max-width: 1520px) {
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+
+  &__menu-item {
+    margin-right: 65px;
+  }
+
+  &__menu-link {
+    color: $brown;
+  }
+
+  &__menu-pictogram-list {
+    border-left: 1px solid $violet;
+    padding: 0 0 0 16px;
+    display: grid;
+    grid-template-columns: 100px 50px 86px 1fr;
+    grid-template-rows: 36px;
+    align-items: center;
+    @media screen and (max-width: 1050px) {
+      border: none;
+      display: flex;
+      padding: 0;
+      align-items: flex-end;
+    }
+  }
+
+  &__menu-pictogram-item {
+    display: flex;
+    @media screen and (max-width: 1050px) {
+      margin: 0 10px;
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+
+  &__menu-pictogram-link {
+    color: $violet;
+
+    &--mobile {
+      @media screen and (max-width: 1050px) {
+        display: none;
+      }
+    }
+  }
+
+  &__menu-pictogram-img {
+    @media screen and (max-width: 1050px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__menu-burger {
+    display: inline-block;
+    height: 1px;
+    width: 24px;
+    background-color: $violet;
+    position: relative;
+    margin-left: 16px;
+
+    &--mobile {
+      display: none;
+      @media screen and (max-width: 1050px) {
+        display: block;
+        margin-bottom: 3px;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      right: 0;
+      display: inline-block;
+      height: 1px;
+      width: 24px;
+      background-color: $violet;
+      @media screen and (max-width: 1050px) {
+        top: -7.5px;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      right: 0;
+      display: inline-block;
+      height: 1px;
+      width: 24px;
+      background-color: $violet;
+      @media screen and (max-width: 1050px) {
+        top: -15px;
+      }
+    }
+  }
+}
+
+#cart {
+  position: relative;
+
+  &::after {
+    content: '1';
+    display: inline-block;
+    text-align: center;
+    font-family: Ubuntu-400, serif;
+    font-size: 9px;
+    line-height: 15px;
+    color: #FFFFFF;
+    border-radius: 100%;
+    background-color: $violet;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    left: 15px;
+  }
+}
+
+
+
