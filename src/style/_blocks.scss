@@ -34,12 +34,33 @@
   height: auto;
   position: relative;
 
+  @media screen and (max-width: 1050px) {
+    & > img {
+      width: 270px;
+      height: 255px;
+      object-fit: cover;
+      border-radius: 20px 0 20px 0;
+
+    }
+    display: grid;
+    grid-template-columns: 275px;
+    justify-items: center;
+    justify-self: center;
+    padding: 0 25px;
+  }
+
   &__img {
     margin-bottom: 10px;
   }
 
   &__detail {
     color: $brown;
+    @media screen and (max-width: 1050px) {
+      justify-self: start;
+      padding: 20px 0 0;
+      color: #4E3535;
+      font-size: 16px;
+    }
   }
 
   &__description {
@@ -77,6 +98,10 @@
   backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 1050px) {
+    width: 270px;
+    height: 497px;
+  }
 
   &__body {
     flex-shrink: 0;
@@ -112,6 +137,9 @@
     font-family: Ubuntu-400, serif;
     font-size: 18px;
     line-height: 24px;
+    @media screen and (max-width: 1050px) {
+      font-size: 16px;
+    }
   }
 
   &__delivery {
@@ -140,6 +168,10 @@
     justify-content: center;
     align-items: center;
     padding: 20px 50px 19px 27px;
+    @media screen and (max-width: 1050px) {
+      padding: 0 20px;
+      justify-content: space-between;
+    }
   }
 
   &__price-title {
@@ -149,6 +181,9 @@
     line-height: 24px;
     align-self: flex-start;
     margin-right: 5px;
+    @media screen and (max-width: 1050px) {
+      align-self: center;
+    }
   }
 
   &__price-cost {
@@ -156,6 +191,9 @@
     font-family: Ubuntu-300, serif;
     font-size: 42px;
     line-height: 24px;
+    @media screen and (max-width: 1050px) {
+      font-size: 32px;
+    }
 
     & span {
       font-family: Ubuntu-400, serif;
@@ -215,11 +253,21 @@
     grid-template-columns: 1fr;
     justify-content: center;
   }
+  @media screen and (min-width: 270px) and (max-width: 1049px) {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+  }
+
 
   &__img-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
+    @media screen and (max-width: 1050px) {
+      height: 300px;
+      margin-bottom: 29px;
+    }
   }
 
   &__img {
@@ -245,6 +293,10 @@
       margin: 0;
       padding: 10px;
     }
+    @media screen and (min-width: 270px) and (max-width: 1049px) {
+      row-gap: 0;
+      padding: 0 25px;
+    }
   }
 
   &__title {
@@ -252,17 +304,46 @@
     @media screen and (max-width: 1520px) {
       align-self: center;
     }
+    @media screen and (max-width: 1050px) {
+      font-size: 26px;
+      line-height: 34px;
+      margin-bottom: 23px;
+    }
   }
 
   &__text {
     @media screen and (max-width: 1520px) {
       text-align: center;
     }
+    @media screen and (min-width: 270px) and (max-width: 1049px) {
+      text-align: left;
+      font-size: 16px;
+      line-height: 25px;
+      &:not(:first-child) + :not(:last-child) {
+        display: none;
+      }
+      &:first-of-type:after {
+        content: "развернуть...";
+        display: block;
+        color: $violet;
+        font-family: Ubuntu-300, serif;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 27px;
+        margin-top: 15px;
+      }
+    }
+
 
     &:last-child {
       margin-top: 18px;
-
+      @media screen and (max-width: 1050px) {
+        margin-bottom: 61px;
+        font-size: 12px;
+        line-height: 27px;
+      }
     }
+
   }
 
   &__link {
@@ -282,11 +363,19 @@
     grid-template-columns: 1fr;
     justify-content: center;
   }
+  @media screen and (min-width: 270px) and (max-width: 1049px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   &__img-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
+    @media screen and (max-width: 1050px) {
+      height: 300px;
+      margin-bottom: 29px;
+    }
   }
 
   &__img {
@@ -313,6 +402,10 @@
       margin: 0;
       padding: 10px;
     }
+    @media screen and (min-width: 270px) and (max-width: 1049px) {
+      row-gap: 0;
+      padding: 0 25px;
+    }
   }
 
   &__title {
@@ -320,14 +413,43 @@
     @media screen and (max-width: 1520px) {
       align-self: center;
     }
+    @media screen and (max-width: 1050px) {
+      font-size: 26px;
+      line-height: 34px;
+      margin-bottom: 23px;
+    }
   }
 
   &__text {
     @media screen and (max-width: 1520px) {
       text-align: center;
     }
+    @media screen and (min-width: 270px) and (max-width: 1049px) {
+      text-align: left;
+      font-size: 16px;
+      line-height: 25px;
+      &:not(:first-child) + :not(:last-child) {
+        display: none;
+      }
+      &:first-of-type:after {
+        content: "развернуть...";
+        display: block;
+        color: $violet;
+        font-family: Ubuntu-300, serif;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 27px;
+        margin-top: 15px;
+      }
+    }
+
     &:last-child {
       margin-top: 18px;
+      @media screen and (max-width: 1050px) {
+        margin-bottom: 61px;
+        font-size: 12px;
+        line-height: 27px;
+      }
     }
   }
 
@@ -341,15 +463,30 @@
   display: flex;
   flex-direction: column;
   width: 416px;
+  @media screen and (max-width: 1050px) {
+    width: 100%;
+  }
 
   &__top {
     display: flex;
     align-items: flex-end;
+    @media screen and (max-width: 1050px) {
+      border-bottom: 1px solid rgba(202, 49, 146, 0.15);
+      border-top: 1px solid rgba(202, 49, 146, 0.15);
+      align-items: center;
+      margin: 0 -25px;
+    }
   }
 
   &__icon {
     margin-right: 26px;
     margin-bottom: 16px;
+    @media screen and (max-width: 1050px) {
+      width: 30px;
+      height: 30px;
+      margin: 0 12px 0 25px;
+
+    }
   }
 
   &__title {
@@ -359,9 +496,46 @@
     letter-spacing: 2.4px;
     text-transform: uppercase;
     margin-bottom: 23px;
+    @media screen and (max-width: 1050px) {
+      font-size: 12px;
+      line-height: normal;
+      letter-spacing: 1.2px;
+      margin-bottom: 0;
+      padding: 15px 0 15px;
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+      &:after {
+        content: url("../img/why/wh10.png");
+        padding: 0 27px;
+      }
+    }
   }
 
   &__text {
+    @media screen and (max-width: 1050px) {
+      font-size: 12px;
+      line-height: 22px;
+      text-align: left;
+      margin-bottom: 16px;
+      display: none;
+    }
   }
 }
 
+// --- button ↓ ---
+.button {
+  width: 270px;
+  height: 62px;
+  border-radius: 10px;
+  border: 1px solid $btn-border;
+  backdrop-filter: blur(7.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $violet;
+  font-family: Ubuntu-400, serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}

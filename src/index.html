@@ -89,8 +89,9 @@
                         </li>
                         <li class="header__menu-pictogram-item">
                             <a href="#"
-                               class="header__menu-pictogram-link">Меню
+                               class="header__menu-pictogram-link header__menu-pictogram-link--mobile">Меню
                                 <span class="header__menu-burger"></span></a>
+                            <span class="header__menu-burger header__menu-burger--mobile"></span>
                         </li>
                     </ul>
                 </nav>
@@ -108,6 +109,7 @@
     <section class="about">
         <div class="container">
             <div class="about__wrapper">
+                <img class="about__bg about__bg--mobile" src="img/about/bg.png">
                 <div class="about__card-body">
                     <h1 class="about__card-title title">Производим дизайнерские
                         обои</h1>
@@ -131,14 +133,83 @@
 
     <section class="wallpaper">
         <div class="container">
+
             <div class="wallpaper__wrapper">
                 <div class="wallpaper__headline">
                     <h2 class="wallpaper__title title">Обои</h2>
                     <a class="wallpaper__detail detail" href="#">Смотреть все
                         обои</a>
                 </div>
+
                 <div class="wallpaper__gallery gallery">
-                    <div class="wallpaper__gallery-column gallery__column">
+
+                    <div class="wallpaper__gallery-column gallery__column wallpaper__gallery-column--mobile ">
+                        <div class="wallpaper__gallery-card photo-card">
+                            <img class="photo-card__img"
+                                 src="img/wallpaper/5.png"
+                                 alt="">
+                            <a class="photo-card__detail detail"
+                               href="#">Этника</a>
+                        </div>
+                        <div class="wallpaper__gallery-card photo-card">
+                            <img class="photo-card__img"
+                                 src="img/wallpaper/4.png"
+                                 alt="">
+                            <a class="photo-card__detail detail" href="#">Горы
+                            </a>
+                        </div>
+                        <div class="wallpaper__gallery-card photo-card">
+                            <img class="photo-card__img"
+                                 src="img/wallpaper/5.png"
+                                 alt="">
+                            <a class="photo-card__detail detail"
+                               href="#">Этника</a>
+                        </div>
+                        <div class="wallpaper__gallery-card price-card">
+                            <div class="price-card__body">
+                                <h3 class="price-card__title">Оплата и
+                                    доставка</h3>
+                                <div class="price-card__description">
+                                    <img src="img/wallpaper/payment.png"
+                                         alt="payment"
+                                         class="price-card__description-img">
+                                    <p class="price-card__description-text">
+                                        Удобная оплата</p>
+                                </div>
+                                <div class="price-card__description">
+                                    <img src="img/wallpaper/production.png"
+                                         alt="production"
+                                         class="price-card__description-img">
+                                    <p class="price-card__description-text">
+                                        Производство меньше недели</p>
+                                </div>
+                                <div class="price-card__description">
+                                    <img src="img/wallpaper/delivery.png"
+                                         alt="delivery"
+                                         class="price-card__description-img">
+                                    <p class="price-card__description-text">
+                                        Быстрая доставка</p>
+                                </div>
+                                <div class="price-card__delivery">
+                                    <h4 class="price-card__delivery-title">
+                                        Самовывоз:</h4>
+                                    <p class="price-card__delivery-text">
+                                        Россия, Москва, ул. Новодмитровская, 1с1
+                                        (ст. метро «Дитровская»)</p>
+                                </div>
+                            </div>
+
+                            <div class="price-card__price">
+                                <h5 class="price-card__price-title">Обои от</h5>
+                                <p class="price-card__price-cost">1 240
+                                    <span>₽/м2</span></p>
+                            </div>
+                        </div>
+                        <a class="wallpaper__gallery-button button" href="#"
+                        >Смотреть все обои</a>
+                    </div>
+
+                    <div class="wallpaper__gallery-column gallery__column ">
                         <div class="wallpaper__gallery-card photo-card">
                             <img class="photo-card__img"
                                  src="img/wallpaper/1.png"
@@ -160,7 +231,7 @@
                         </div>
                     </div>
 
-                    <div class="wallpaper__gallery-column gallery__column">
+                    <div class="wallpaper__gallery-column gallery__column ">
                         <div class="wallpaper__gallery-card photo-card">
                             <img class="photo-card__img"
                                  src="img/wallpaper/4.png"
@@ -217,7 +288,7 @@
                         </div>
                     </div>
 
-                    <div class="wallpaper__gallery-column gallery__column">
+                    <div class="wallpaper__gallery-column gallery__column ">
                         <div class="wallpaper__gallery-card photo-card">
                             <img class="photo-card__img"
                                  src="img/wallpaper/6.png"
@@ -259,7 +330,7 @@
                         </div>
                     </div>
 
-                    <div class="wallpaper__gallery-column gallery__column">
+                    <div class="wallpaper__gallery-column gallery__column ">
                         <div class="wallpaper__gallery-card photo-card">
                             <img class="photo-card__img"
                                  src="img/wallpaper/9.png"
@@ -281,16 +352,28 @@
                                href="#">Простые формы</a>
                         </div>
                     </div>
+
                 </div>
             </div>
+
         </div>
     </section>
 
     <section class="instagram">
         <div class="container">
             <div class="instagram__wrapper">
+
                 <img class="instagram__logo" src="img/instagram/instagram1.png"
                      alt="instagram">
+
+                <h2 class="instagram__title instagram__title--mobile title">
+                    Респейс в Instagram</h2>
+                <p class="instagram__text instagram__text--mobile description">
+                    Подписывайтесь на наш
+                    Instagram, следите за новостями, мы публикуем много
+                    всего интересного! Все подписчики получают промо-код на
+                    скидку 5%!</p>
+
                 <div class="instagram__description">
                     <h2 class="instagram__title title">Респейс в Instagram</h2>
                     <p class="instagram__text description">Подписывайтесь на наш
@@ -298,6 +381,7 @@
                         всего интересного! Все подписчики получают промо-код на
                         скидку 5%!</p>
                 </div>
+
                 <a class="instagram__button" href="#">Подписаться</a>
             </div>
         </div>
@@ -345,6 +429,7 @@
         <div class="container">
 
             <article class="tile__presentation">
+
                 <div class="tile__presentation-description">
                     <h2 class="tile__presentation-title title">Керамическая
                         плитка</h2>
@@ -363,15 +448,87 @@
                         потолков, кухонных фартуков и широко применяется в
                         дизайне гостиной и ванной комнаты.
                     </p>
+
                     <a class="tile__presentation-detail detail"
                        href="#">Смотреть всю
                         плитку</a>
+
+                    <a class="tile__presentation-detail--mobile detail"
+                       href="#">развернуть...</a>
                 </div>
+
                 <img class="tile__presentation-img" src="img/tile/t1main.png"
                      alt="tile">
+
             </article>
 
             <div class="tile__gallery gallery">
+
+                <div class="tile__gallery-column--mobile gallery__column">
+                    <div class="tile__gallery-card photo-card">
+                        <img class="photo-card__img"
+                             src="img/tile/t3.png"
+                             alt="">
+                        <a class="photo-card__detail detail" href="#">Горы
+                        </a>
+                    </div>
+                    <div class="tile__gallery-card photo-card">
+                        <img class="photo-card__img"
+                             src="img/tile/t3.png"
+                             alt="">
+                        <a class="photo-card__detail detail" href="#">Горы
+                        </a>
+                    </div>
+                    <div class="tile__gallery-card photo-card">
+                        <img class="photo-card__img"
+                             src="img/tile/t3.png"
+                             alt="">
+                        <a class="photo-card__detail detail" href="#">Горы
+                        </a>
+                    </div>
+                    <div class="tile__gallery-card price-card">
+                        <div class="price-card__body">
+                            <h3 class="price-card__title">Оплата и
+                                доставка</h3>
+                            <div class="price-card__description">
+                                <img src="img/wallpaper/payment.png"
+                                     alt="payment"
+                                     class="price-card__description-img">
+                                <p class="price-card__description-text">
+                                    Удобная оплата</p>
+                            </div>
+                            <div class="price-card__description">
+                                <img src="img/wallpaper/production.png"
+                                     alt="production"
+                                     class="price-card__description-img">
+                                <p class="price-card__description-text">
+                                    Производство меньше недели</p>
+                            </div>
+                            <div class="price-card__description">
+                                <img src="img/wallpaper/delivery.png"
+                                     alt="delivery"
+                                     class="price-card__description-img">
+                                <p class="price-card__description-text">
+                                    Быстрая доставка</p>
+                            </div>
+                            <div class="price-card__delivery">
+                                <h4 class="price-card__delivery-title">
+                                    Самовывоз:</h4>
+                                <p class="price-card__delivery-text">
+                                    Россия, Москва, ул. Новодмитровская, 1с1
+                                    (ст. метро «Дитровская»)</p>
+                            </div>
+                        </div>
+
+                        <div class="price-card__price">
+                            <h5 class="price-card__price-title">Плитка от</h5>
+                            <p class="price-card__price-cost">5 440
+                                <span>₽/м2</span></p>
+                        </div>
+                    </div>
+                    <a class="tile__gallery-button button" href="#"
+                    >Смотреть всю плитку</a>
+                </div>
 
                 <div class="tile__gallery-column gallery__column">
                     <div class="tile__gallery-card photo-card">
@@ -487,9 +644,11 @@
         <div class="container">
 
             <article class="paints__presentation">
+
                 <img class="paints__presentation-img"
                      src="img/paints/p_main.png"
                      alt="paints">
+
                 <div class="paints__presentation-description">
                     <h2 class="paints__presentation-title title">Краски</h2>
                     <p class="paints__presentation-text description">Сказать
@@ -505,6 +664,8 @@
                         специализированные колеры и универсальные. Почему не
                         стоит использовать материалы, предназначенные для улицы?
                     </p>
+                    <a class="paints__detail--mobile detail"
+                       href="#">развернуть...</a>
                 </div>
             </article>
 
@@ -560,6 +721,8 @@
                     </div>
 
                 </div>
+
+                <a href="#" class="paints__button-more button">Смотреть ещё</a>
             </div>
         </div>
 
@@ -570,6 +733,7 @@
         <div class="container">
 
             <article class="designer-wallpaper__wrapper">
+
                 <div class="designer-wallpaper__description">
                     <h2 class="designer-wallpaper__title title">Дизайнерские
                         обои вашей мечты</h2>
@@ -582,6 +746,7 @@
                         Респейс на ваших стенах очаруют вас с первой же
                         минуты.</p>
                 </div>
+
                 <div class="designer-wallpaper__video-box">
                     <video class="designer-wallpaper__video"
                            poster="img/designer_wallpaper/dw1.png"
@@ -593,7 +758,9 @@
                     <img class="designer-wallpaper__img"
                          src="img/designer_wallpaper/dw2.png" alt="play">
                 </div>
+
             </article>
+
         </div>
     </section>
 
@@ -1169,7 +1336,7 @@
 
                     <div class="footer__products-body">
                         <h5 class="footer__products-title footer__title">
-                            Стилистические <br> подборки</h5>
+                            Сопутствующие <br> товары</h5>
                         <p class="footer__products-item">Кисти </p>
                         <p class="footer__products-item"> Клей</p>
                         <p class="footer__products-item"> Системы укладки плитки
@@ -1178,17 +1345,17 @@
 
                 </div>
 
-                <div class="footer__products-body">
+                <div class="footer__products-body footer__products-body--mobile">
                     <h5 class="footer__products-title footer__title">
                         Компания</h5>
-                    <p class="footer__products-item">О нас </p>
-                    <p class="footer__products-item"> Дизайнерам</p>
-                    <p class="footer__products-item"> Оплата и доставка</p>
-                    <p class="footer__products-item"> Наш шоурум</p>
-                    <p class="footer__products-item"> Где купить </p>
-                    <p class="footer__products-item"> Контакты</p>
-                    <p class="footer__products-item"> Портфолио </p>
-                    <p class="footer__products-item"> Корпоративным клиентам</p>
+                    <p class="footer__products-item footer__products-item--mobile">О нас </p>
+                    <p class="footer__products-item footer__products-item--mobile"> Дизайнерам</p>
+                    <p class="footer__products-item footer__products-item--mobile"> Оплата и доставка</p>
+                    <p class="footer__products-item footer__products-item--mobile"> Наш шоурум</p>
+                    <p class="footer__products-item footer__products-item--mobile"> Где купить </p>
+                    <p class="footer__products-item footer__products-item--mobile"> Контакты</p>
+                    <p class="footer__products-item footer__products-item--mobile"> Портфолио </p>
+                    <p class="footer__products-item footer__products-item--mobile"> Корпоративным клиентам</p>
                 </div>
 
                 <div class="footer__contacts-body">

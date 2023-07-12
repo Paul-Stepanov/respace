@@ -1,7 +1,10 @@
 .wallpaper-for {
   margin-bottom: 163px;
-
+@media screen and (max-width: 1050px){
+  margin-bottom: 88px;
+}
   &__body {
+
   }
 }
 

@@ -8,6 +8,14 @@
 
   &__title {
     margin-bottom: 70px;
+    @media screen and (max-width: 1050px){
+      color: $dark_violet;
+      font-family: Ubuntu-500, serif;
+      font-size: 22px;
+      font-style: normal;
+      line-height: normal;
+      margin-bottom: 22px;
+    }
   }
 
   &__gallery {
@@ -18,9 +26,22 @@
       flex-wrap: wrap;
       overflow: hidden;
     }
+    @media screen and (min-width: 320px) and (max-width: 1000px) {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
   }
 
   &__gallery-card {
+    @media screen and (min-width: 320px) and (max-width: 400px) {
+      padding: 0
+    }
+
+    & > img {
+      @media screen and (min-width: 320px) and (max-width: 400px) {
+        border-radius: 0;
+      }
+    }
   }
 }
 

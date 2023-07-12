@@ -11,14 +11,22 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+    @media screen and (max-width: 1050px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__presentation-img {
     margin-right: 66px;
+    @media screen and (max-width: 1050px) {
+      margin: 0;
+      object-fit: cover;
+      height: 310px;
+    }
   }
 
   &__presentation-description {
-    @media screen and (max-height: 1520px) {
+    @media screen and (max-width: 1520px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -26,20 +34,39 @@
       align-items: center;
       text-align: center;
     }
+    @media screen and (min-width: 320px) and (max-width: 1049px) {
+      align-items: start;
+      text-align: left;
+    }
   }
 
 
   &__presentation-title {
     margin-bottom: 30px;
+    @media screen and (max-width: 1050px) {
+      font-size: 26px;
+      line-height: normal;
+      margin-bottom: 25px;
+    }
   }
 
   &__presentation-text {
     margin-bottom: 15px;
     padding-right: 5px;
+    @media screen and (max-width: 1050px) {
+      padding: 0;
+      font-size: 16px;
+      &:nth-last-of-type(1) {
+        display: none;
+      }
+    }
   }
 
   &__gallery {
-
+    @media screen and (max-width: 1050px) {
+      display: grid;
+      justify-items: center;
+    }
   }
 
   &__buttons {
@@ -51,6 +78,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+    }
+    @media screen and (max-width: 1050px) {
+      margin-bottom: 35px;
     }
   }
 
@@ -67,6 +97,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 1050px) {
+      &:not(:first-child) {
+        display: none;
+      }
+      &:after {
+        content: url("../img/paints/p2.png");
+      }
+      justify-content: space-between;
+      width: 270px;
+      height: 60px;
+      border: 1px solid $violet;
+      background: $white;
+      color: $violet;
+      font-size: 16px;
+    }
 
     &--active {
       background: $violet;
@@ -80,6 +125,21 @@
     @media screen and (max-width: 1520px) {
       margin-top: 20px;
     }
+    @media screen and (max-width: 1050px) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+      @media screen and (max-width: 1050px) {
+        display: flex;
+        align-items: flex-start;
+        font-size: 12px;
+        &:after {
+          display: none;
+        }
+      }
+    }
   }
 
   &__slider {
@@ -89,6 +149,9 @@
       justify-content: center;
       margin: 20px;
       overflow: hidden;
+    }
+    @media screen and (min-width: 270px) and (max-width: 1049px){
+      margin-bottom: 35px;
     }
   }
 
@@ -101,6 +164,20 @@
     padding: 14px;
     @media screen and (max-width: 1520px) {
       margin-bottom: 20px;
+    }
+    @media screen and (min-width: 270px) and (max-width: 1049px) {
+      margin-bottom: 0;
+      width: 270px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      border-radius: 0;
+      &:first-child {
+        border-radius: 10px 10px 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 10px 10px;
+      }
     }
 
 
@@ -132,6 +209,9 @@
   &__card-img {
     align-self: start;
     justify-self: start;
+    @media screen and (max-width: 1050px) {
+      margin-right: 21px;
+    }
   }
 
   &__card-text {
@@ -141,6 +221,16 @@
     align-self: end;
     justify-self: center;
     margin-bottom: 15px;
+    @media screen and (max-width: 1050px) {
+      margin: 0;
+      align-self: center;
+    }
   }
 
+  &__button-more {
+    display: none;
+    @media screen and (max-width: 1050px) {
+      display: flex;
+    }
+  }
 }

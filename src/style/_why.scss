@@ -1,28 +1,44 @@
 .why {
   margin-bottom: 162px;
+  @media screen and (max-width: 1050px) {
+    background: $bg-gray;
+    margin-bottom: 73px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
-    @media screen and (max-width: 1520px){
+    @media screen and (max-width: 1520px) {
       align-items: center;
       flex-direction: column;
       text-align: center;
+      margin-bottom: 73px;
     }
+
   }
 
   &__title {
     margin-bottom: 71px;
+    @media screen and (max-width: 1050px) {
+      font-size: 26px;
+      line-height: 34px;
+      text-align: left;
+      margin: 40px 0 30px;
+    }
   }
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(3,416px);
+    grid-template-columns: repeat(3, 416px);
     column-gap: 56px;
     row-gap: 45px;
-    @media screen and (max-width: 1520px){
+    @media screen and (max-width: 1520px) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+    }
+    @media screen and (max-width: 1050px){
+    gap: 0;
     }
   }
 
