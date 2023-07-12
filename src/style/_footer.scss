@@ -1,26 +1,69 @@
 .footer {
   &__top {
     margin-bottom: 80px;
+    @media screen and (max-width: 1050px) {
+      margin-bottom: 0;
+    }
   }
 
   &__top-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     align-items: baseline;
-    @media screen and (max-width: 1520px){
+    @media screen and (max-width: 1520px) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+    @media screen and (min-width: 270px) and (max-width: 1049px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      text-align: left;
+      margin: 0 -25px;
     }
   }
 
   &__products-box {
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 1050px){
+      margin-bottom: 35px;
+    }
   }
 
   &__products-body {
     margin-bottom: 26px;
+    @media screen and (max-width: 1050px) {
+      & > .footer__products-item:not(.footer__products-item--mobile) {
+        display: none;
+      }
+      margin-bottom: 0;
+      width: 100%;
+      padding: 0 25px;
+    }
+
+    &--mobile {
+      @media screen and (max-width: 1050px) {
+        & > .footer__products-title {
+          display: none;
+        }
+        border-top: 1px solid rgba(202, 49, 146, 0.15);
+        border-bottom: 1px solid rgba(202, 49, 146, 0.15);
+        padding: 25px;
+        margin-bottom: 25px;
+        & .footer__products-item--mobile:last-child{
+          color: $violet;
+          &:after{
+            content: "Соглашение об использовании сайта";
+            display: block;
+            color: $brown;
+            font-family: Ubuntu-400, serif;
+            font-size: 14px;
+            line-height: 34px;
+          }
+        }
+      }
+    }
   }
 
   &__title {
@@ -32,6 +75,9 @@
 
   &__products-title {
     margin-bottom: 16px;
+    @media screen and (max-width: 1050px) {
+      font-size: 18px;
+    }
   }
 
   &__products-item {
@@ -45,6 +91,14 @@
     display: grid;
     grid-template-columns: 220px;
     justify-content: start;
+    @media screen and (max-width: 1050px) {
+      padding: 0 25px;
+      width: 100%;
+      grid-template-columns: 1fr;
+      & > .footer__contacts-title {
+        display: none;
+      }
+    }
   }
 
   &__contacts-title {
@@ -65,6 +119,10 @@
       transform: translateY(25%);
       margin-right: 16px;
     }
+
+    @media screen and (max-width: 1050px) {
+      line-height: 60px;
+    }
   }
 
   &__contacts-email {
@@ -83,6 +141,12 @@
       transform: translateY(25%);
       margin-right: 16px;
     }
+
+    @media screen and (max-width: 1050px) {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 30px;
+    }
   }
 
   &__contacts-social {
@@ -90,6 +154,9 @@
     grid-template-columns: repeat(auto-fit, 35px);
     column-gap: 10px;
     margin-bottom: 35px;
+    @media screen and (max-width: 1050px) {
+      justify-content: space-between;
+    }
   }
 
   &__social-link {
@@ -117,6 +184,9 @@
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 13px;
+    @media screen and (max-width: 1050px) {
+      display: none;
+    }
   }
 
   &__copyright {
@@ -124,6 +194,9 @@
     font-family: Ubuntu-400, serif;
     font-size: 14px;
     line-height: 27px;
+    @media screen and (max-width: 1050px) {
+      display: none;
+    }
   }
 
   &__bottom {
@@ -132,9 +205,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 1050px) {
+      position: relative;
+      min-height: 72px;
+      &:after {
+        content: "© Respace 2012-2021";
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        transform: translateY(-50%);
+        color: $white;
+        font-family: Ubuntu-400, serif;
+        font-size: 14px;
+        font-style: normal;
+        line-height: normal;
+      }
+    }
   }
 
   &__arrow {
     cursor: pointer;
+    @media screen and (max-width: 1050px) {
+      display: none;
+    }
   }
 }
