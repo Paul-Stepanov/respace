@@ -21,7 +21,8 @@
     text-align: center;
     @media screen and (min-width: 270px) and (max-width: 1049px) {
       flex-wrap: nowrap;
-      flex-direction: column-reverse
+      flex-direction: column-reverse;
+      padding: 0;
     }
   }
 
